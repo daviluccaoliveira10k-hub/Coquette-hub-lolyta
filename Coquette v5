@@ -1,0 +1,28 @@
+-- ==========================================
+-- 🚀 EXECUTA O COQUETTE HUB PRIMEIRO
+-- ==========================================
+print("[1/2] Executando Coquette Hub...")
+
+local sucesso, erro = pcall(function()
+    loadstring(game:HttpGet("https://coquette-hub.com/r/5753a035c626"))()
+end)
+
+if not sucesso then
+    warn("[AVISO] Coquette Hub não carregou: " .. tostring(erro))
+end
+
+-- Espera a UI do Coquette carregar
+task.wait(5)
+
+-- ==========================================
+-- 👻 AGORA O SCRIPT DE TERROR
+-- ==========================================
+print("[2/2] Iniciando script de terror...")
+
+local sucesso2, erro2 = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/daviluccaoliveira10k-hub/Go-Hub-Script-universal-/refs/heads/main/Coquette%20v5%20New"))()
+end)
+
+if not sucesso2 then
+    warn("[AVISO] Script de terror não carregou: " .. tostring(erro2))
+end
